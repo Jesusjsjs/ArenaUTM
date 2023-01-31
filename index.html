@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/hero.style.css">
     <link rel="stylesheet" href="./styles/header.style.css">
+    <link rel="stylesheet" href="./styles/section2-videos.style.css">
+    <link rel="stylesheet" href="./styles/section3-preview-ranking.style.css">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
@@ -32,6 +36,7 @@
 
 
     </header>
+    
     <!-- Hero del proyecto -->
     <div class="hero">
         <!-- Display block, div demás TODO: Corregir -->
@@ -41,7 +46,7 @@
                 <!-- Eslogan main -->
                 <div>
                     <h1>CONCURSO DE PROYECTOS</h1>
-                    <h2>PRIMEROS PUESTOS:</h2>
+                    <h2>PRIMEROS PUESTOS</h2>
                     <button>VER RANKING</button>
                     <button>VER PROYECTOS</button> 
                 </div>
@@ -73,10 +78,62 @@
             </div>
 
         </div>
-        
 
     </div>
+    
+    <!-- Section de videos, cargar los videos dinamicamente con React -->
+    <div class="section2-videos">
+        <div>
+            <h3>PROYECTO</h3>
+            <h2>NAME OF PROJECT</h2>
+            <div>   
+                <video></video>
+            </div>
+            <button>VER CATALOGO</button>
+        </div>        
+    </div>
 
+    <!-- Mini Ranking preview -->
+    <div class="section3-preview-ranking">
+        <!-- Section 1 of ranking -->
+        <div>
+            <h2>RANKING DE</h2>
+            <h3>EQUIPOS</h3>
+            <!-- Hacemos un mini ranking que podemos actualizar y reutilizar con Modulos en React -->
+            <div class="ranking-preview">
+                <!-- Aqui empiezan los elementos de nuestra lista -->
+                <div>
+                    <h3>#1</h3>
+                    <h3>NAME PROYECTO</h3>
+                </div>
+                <div>
+                    <h3>#2</h3>
+                    <h3>NAME PROYECTO</h3>
+                </div>
+                <div>
+                    <h3>#3</h3>
+                    <h3>NAME PROYECTO</h3>
+                </div>
+                <div>
+                    <h3>#4</h3>
+                    <h3>NAME PROYECTO</h3>
+                </div>
+                <div>
+                    <h3>#5</h3>
+                    <h3>NAME PROYECTO</h3>
+                </div>
+                <!-- En este div metemos el button que agregaremos al final -->
+                <div>
+                    <button></button>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div></div>
+    </div>
 
 
 </body>

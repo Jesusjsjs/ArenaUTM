@@ -14,7 +14,7 @@
 .hero{
     display: flex;
     justify-content: center;
-    align-items: end; 
+    align-items: center; 
     background: linear-gradient(113.28deg, #14291F 22.57%, #28232F 65.04%);
     color: white;
     width: 100%;
@@ -26,14 +26,16 @@
 }
 .hero-main{
     display: flex;
-    align-items:    center;
+    align-items: center;
     flex-wrap: wrap;
     max-width: 1400px;
+    height: 75vh;
 }
 .hero-main div{
     margin: 20px;
 }
 .hero-main h1{
+    margin-top: 20px;
     font-size: 25px;
     font-weight: 600;
     margin-bottom: -8px;
@@ -78,7 +80,7 @@
 
 /* Barras de puntuation */
 .hero-main div:last-child{
-    text-align: end;
+    text-align: center;
 }
 .hero-main div:last-child div{
     padding: 20px;
@@ -112,17 +114,20 @@
     margin-top: 50px;
     grid-template-columns: repeat(3, 1fr);
     padding-bottom: 30px;
+    height: 10vh;
 }
 .hero-bottom div{
     width: 33%;
     display: flex;
     justify-content: center;
+    
 }
 .hero-bottom h3{
     font-weight: 500;
     text-align: center;
     font-size: 15px;
     letter-spacing: .1rem;
+    margin-bottom: 20px;
 }
 .hero-bottom h3 span{
     font-weight: 700;
@@ -131,7 +136,7 @@
 
 
 
-@media( max-width: 800px ){
+@media( max-width: 900px ){
     .hero{
         height: 100vh;
     }
@@ -142,6 +147,23 @@
     .hero-main div{
         text-align: center;
     }
+
+    .hero-main h1{
+        font-size: 22px;
+    }
+    .hero-main h2{
+        font-size: 30px;
+    }
+    .hero-bottom h3{
+        font-size: 11px;
+    }
+
+    .hero-main div:last-child div{
+        margin: 10px;
+        padding:10px;
+        font-size: 14px;
+    }
+
 
 }
 
