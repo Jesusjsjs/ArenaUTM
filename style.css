@@ -1,0 +1,86 @@
+:root{
+    --color-verde-claro: #05FFA5;
+    --color-morado-main: #4321A4; 
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* Globales */
+
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: linear-gradient(113.28deg, #14291F 22.57%, #28232F 65.04%);
+    color: white;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Montserrat';
+}
+.hero-main{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1400px;
+}
+.hero-main div{
+    margin: 20px;
+}
+.hero-main h1{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: -8px;
+}
+.hero-main h2{
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--color-verde-claro);
+}
+
+/* Botones design */
+.hero-main div:first-child button:last-child{
+    background-color: rgba(181, 160, 160, 0);
+    border: 2px solid var(--color-morado-main);
+}
+
+
+
+/* Barras de puntuation */
+.hero-main div:last-child{
+    text-align: end;
+}
+.hero-main div:last-child div{
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    background: rgba(140, 140, 140, 0.27);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 4px;
+}
+.hero-main div:last-child div h4{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.hero-main div:last-child div span{
+    font-weight: 800;
+    letter-spacing: .2rem;
+}
+
+
+.hero button{
+    padding: 10px;
+    color: white;
+    background-color:  var(--color-morado-main);
+    font-family: 'Montserrat';
+    border: none;
+    border-radius: 4px;
+    margin: 10px;
+    letter-spacing: 0.14em;
+}
