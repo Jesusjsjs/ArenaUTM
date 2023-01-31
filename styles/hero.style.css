@@ -45,10 +45,34 @@
 }
 
 /* Botones design */
+.hero button{
+    padding: 10px;
+    color: white;
+    background-color:  var(--color-morado-main);
+    font-family: 'Montserrat';
+    border: none;
+    border-radius: 4px;
+    margin: 10px;
+    letter-spacing: 0.14em;
+}
+.hero button:hover{
+    background-color: var(--color-verde-claro);
+    border: none;
+    color: var(--color-morado-main);
+    transition: 300ms;
+    cursor: pointer;
+} 
+
 .hero-main div:first-child button:last-child{
     background-color: rgba(181, 160, 160, 0);
     border: 2px solid var(--color-morado-main);
 }
+.hero-main div:first-child button:last-child:hover{
+    border: 2px solid var(--color-verde-claro);
+    background-color: var(--color-verde-claro);
+    color: var(--color-morado-main);
+} 
+
 
 
 
@@ -76,16 +100,7 @@
     letter-spacing: .2rem;
 }
 
-.hero button{
-    padding: 10px;
-    color: white;
-    background-color:  var(--color-morado-main);
-    font-family: 'Montserrat';
-    border: none;
-    border-radius: 4px;
-    margin: 10px;
-    letter-spacing: 0.14em;
-}
+
 
 /* Hero-Bottom Estilos */
 .hero-bottom{
@@ -107,8 +122,27 @@
     font-weight: 500;
     text-align: center;
     font-size: 15px;
-
+    letter-spacing: .1rem;
 }
 .hero-bottom h3 span{
     font-weight: 700;
+    color: var(--color-verde-claro);
+}   
+
+
+
+@media( max-width: 800px ){
+    .hero{
+        height: 100vh;
+    }
+    .hero-main{
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-main div{
+        text-align: center;
+    }
+
 }
+
+
