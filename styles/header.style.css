@@ -1,0 +1,68 @@
+:root{
+    --color-verde-claro: #05FFA5;
+    --color-morado-main: #4321A4; 
+}
+
+
+header{
+    position: fixed;
+    display: flex;
+    width: 100%;
+
+}
+header div{
+    width: 50%;
+}
+header div:first-child img{
+    margin: 20px;
+}
+
+
+.menu-amburguesa{
+    display: none;
+    width: 50%;
+    text-align: end;
+}
+.menu-amburguesa button{
+    margin: 10px;
+    border: none;
+    background: none;
+    font-family: 'Montserrat';
+    color: white;
+    padding: 10px;
+    transition: 500ms;
+    cursor: pointer;
+    letter-spacing: .2rem;
+
+}
+
+
+header div:last-child{
+    display: flex;
+    justify-content: end;
+}
+header div:last-child button{
+    margin: 10px;
+    border: none;
+    background: none;
+    font-family: 'Montserrat';
+    color: white;
+    padding: 10px;
+    transition: 500ms;
+    cursor: pointer;
+    letter-spacing: .2rem;
+} 
+header div:last-child button:hover{
+    transition: 500ms;
+    border-bottom:1px solid var(--color-verde-claro);
+    color: var(--color-verde-claro);
+}
+
+@media ( max-width: 500px )  {
+    .menu-amburguesa{
+        display: block;
+    }
+    header div:last-child{
+        display: none;
+    }
+}
