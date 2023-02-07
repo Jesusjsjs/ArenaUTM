@@ -1,0 +1,72 @@
+:root{
+    --color-verde-claro: #05FFA5;
+    --color-morado-main: #4321A4; 
+}
+
+
+
+.conoce-proyectos{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    background-color: #1A1C23;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.conoce-proyectos h2{
+    text-align: center;
+}
+.conoce-proyectos h3{
+    text-align: center;
+    margin: 20px;
+}
+.conoce-proyectos div div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.conoce-proyectos div div img{
+    width: 33%;
+}
+.conoce-proyectos div div input{
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+    background: rgba(132, 132, 132, 0.6);
+    backdrop-filter: blur(2px);
+    border: none;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: white;
+    border-radius: 4px 0px 0px 4px;
+}
+.conoce-proyectos div div button{
+    background: var(--color-morado-main);
+    border-radius: 0px 4px 4px 0px;
+    color: white;
+    border: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.conoce-proyectos div div button:hover{
+    background-color: var(--color-verde-claro);
+    transition: 500ms;
+}
+.conoce-proyectos div div button img{
+    width: 20px;
+}
+
+
+
+@media ( max-width: 800px ) {
+    .conoce-proyectos div div img{
+        width: 90%;
+    }
+    .conoce-proyectos div div input{
+        width: 220px;
+    }
+}

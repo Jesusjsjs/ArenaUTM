@@ -1,0 +1,157 @@
+:root{
+    --color-verde-claro: #05FFA5;
+    --color-morado-main: #4321A4; 
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* Globales */
+h1{
+    font-size: 60px;
+    color: white;
+    font-family: 'Montserrat';
+}
+h1 b{
+    color: var(--color-verde-claro);
+    font-weight: 900;
+    letter-spacing: 0.08rem;
+}
+h2{
+    font-family: 40px;
+    color: white;
+    font-family: 'Montserrat';
+}
+h2 b{
+    font-size: 40px;
+    color: var(--color-verde-claro);
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+}
+h3{
+    font-size: 20px;
+    color: white;
+    font-family: 'Montserrat';
+}
+h3 b{
+    color: var(--color-verde-claro);
+    font-weight: 900;
+}
+h4{
+    font-size: 16px;
+    color: white;
+    font-family: 'Montserrat';
+}
+h5{
+    font-size: 14px;
+    color: white;
+    font-family: 'Montserrat';
+}
+span{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+button{
+    padding: 10px;
+    color: white;
+    background-color:  var(--color-morado-main);
+    font-family: 'Montserrat';
+    border: none;
+    border-radius: 4px;
+    margin: 10px;
+    letter-spacing: 0.14em;
+}
+button:hover{
+    background-color: var(--color-verde-claro);
+    border: none;
+    color: var(--color-morado-main);
+    transition: 300ms;
+    cursor: pointer;
+} 
+
+/* ---------------- */
+
+.mejores-proyectos{
+
+    background: linear-gradient(102.51deg, #214635 0%, #22132E 101.22%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.mejores-proyectos div{
+    width: 50%;
+}
+.mejores-proyectos div:last-child{
+    text-align: end;
+    padding-right: 10%;
+}
+.mejores-proyectos div img{
+    width: 60%;
+}
+.mejores-proyectos div h2{
+    margin-bottom: -10px;
+}
+.mejores-proyectos div button:last-child{
+    background: none;
+    border:1px solid var(--color-morado-main);
+}
+.mejores-proyectos div button:last-child:hover{
+    color: var(--color-morado-main);
+    background-color: var(--color-verde-claro);
+    border:1px solid var(--color-verde-claro);
+}
+
+
+@media ( max-width: 800px ) {
+        /* Estilos globales */
+        h1{
+            font-size: 40px;
+        }
+        h1 b{
+            color: var(--color-verde-claro);
+            font-weight: 900;
+            letter-spacing: 0.08rem;
+        }
+        h2{
+            font-family: 20px;
+        }
+        h3{
+            font-size: 16px;
+        }
+        h4{
+            font-size: 14px;
+        }
+        h5{
+            font-size: 12px;
+        }
+        /* =========================== */
+
+        .mejores-proyectos{
+            padding-top: 90px;
+            justify-content: center;
+            
+        }
+        .mejores-proyectos div{
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .mejores-proyectos div:first-child{
+            order: 1;
+        }
+        .mejores-proyectos div:last-child{
+            text-align: center;
+            padding: 0;
+        }
+        .mejores-proyectos div img{
+            padding-top: 40px;
+            width: 100%;
+        }
+}

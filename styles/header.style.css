@@ -52,6 +52,7 @@ header div:last-child button{
     transition: 500ms;
     cursor: pointer;
     letter-spacing: .2rem;
+    border-radius: 0px;
 } 
 header div:last-child button:hover{
     transition: 500ms;
