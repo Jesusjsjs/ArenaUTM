@@ -9,16 +9,60 @@
     margin: 0;
 }
 /* Globales */
+h1{
+    font-size: 60px;
+    color: white;
+    font-family: 'Montserrat';
+}
+h1 b{
+    color: var(--color-verde-claro);
+    font-weight: 900;
+    letter-spacing: 0.08rem;
+}
+h2{
+    font-family: 40px;
+    color: white;
+    font-family: 'Montserrat';
+}
+h2 b{
+    font-size: 40px;
+    color: var(--color-verde-claro);
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+}
+h3{
+    font-size: 20px;
+    color: white;
+    font-family: 'Montserrat';
+}
+h4{
+    font-size: 16px;
+    color: white;
+    font-family: 'Montserrat';
+}
+h5{
+    font-size: 14px;
+    color: white;
+    font-family: 'Montserrat';
+}
+span{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+
+/* ---------------- */
 
 
 .hero{
+    padding-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center; 
     background: linear-gradient(113.28deg, #14291F 22.57%, #28232F 65.04%);
     color: white;
     width: 100%;
-    height: 85vh;
     font-family: 'Montserrat';
 }
 .hero{
@@ -29,20 +73,17 @@
     align-items: center;
     flex-wrap: wrap;
     max-width: 1400px;
-    height: 75vh;
 }
 .hero-main div{
     margin: 20px;
 }
-.hero-main h1{
-    margin-top: 20px;
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: -8px;
+.hero-main div:first-child h3{
+    letter-spacing: 0.13rem;
 }
+
 .hero-main h2{
-    font-size: 40px;
     font-weight: 800;
+    letter-spacing: 0.08em;
     color: var(--color-verde-claro);
 }
 
@@ -93,6 +134,10 @@
     backdrop-filter: blur(20px);
     border-radius: 4px;
 }
+.hero-main div:last-child div::after{
+    background: rgba(76, 241, 57, 0.27);
+}
+
 .hero-main div:last-child div h4{
     margin-right: 20px;
     margin-left: 20px;
@@ -106,6 +151,7 @@
 
 /* Hero-Bottom Estilos */
 .hero-bottom{
+    padding-top: 40px;
     display: grid;
     flex-wrap: wrap;
     justify-content: center;
@@ -114,7 +160,6 @@
     margin-top: 50px;
     grid-template-columns: repeat(3, 1fr);
     padding-bottom: 30px;
-    height: 10vh;
 }
 .hero-bottom div{
     width: 33%;
@@ -136,9 +181,34 @@
 
 
 
-@media( max-width: 900px ){
+@media( max-width: 800px ){
+    /* Estilos globales */
+    h1{
+        font-size: 40px;
+    }
+    h1 b{
+        color: var(--color-verde-claro);
+        font-weight: 900;
+        letter-spacing: 0.08rem;
+    }
+    h2{
+        font-family: 20px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    h4{
+        font-size: 14px;
+    }
+    h5{
+        font-size: 12px;
+    }
+    /* =========================== */
+
+    /* Hero */
     .hero{
-        height: 100vh;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
     .hero-main{
         justify-content: center;
@@ -149,22 +219,23 @@
     }
 
     .hero-main h1{
-        font-size: 22px;
+        margin-bottom: 2px;
     }
-    .hero-main h2{
-        font-size: 30px;
+    .hero-main h3{
+        margin-bottom: 10px;
     }
-    .hero-bottom h3{
-        font-size: 11px;
+    .hero-main div:first-child button{
+        margin: 5px;
     }
-
     .hero-main div:last-child div{
         margin: 10px;
         padding:10px;
         font-size: 14px;
     }
-
-
+    .hero-bottom{
+        display: none;
+    }
+    /* =========================== */
 }
 
 

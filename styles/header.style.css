@@ -15,6 +15,7 @@ header div{
 }
 header div:first-child img{
     margin: 20px;
+    cursor: pointer;
 }
 
 
@@ -58,7 +59,7 @@ header div:last-child button:hover{
     color: var(--color-verde-claro);
 }
 
-@media ( max-width: 500px )  {
+@media ( max-width: 800px )  {
     .menu-amburguesa{
         display: block;
     }
